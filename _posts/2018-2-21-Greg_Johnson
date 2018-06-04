@@ -1,0 +1,15 @@
+---
+layout: default
+catagory: contact
+title: "Greg Johnson"
+FName: "Greg"
+LName: "Johnson"
+Street_Address: "3245 Peachtree Street"
+City:  "Atlanta"
+State: "Georgia"
+Zip:  "30303"
+Phone: "404-331-5001"
+Cell: "404-568-6596"
+Email: "Greg.Johnson@nowhere.com"
+Notes: "null"
+---
