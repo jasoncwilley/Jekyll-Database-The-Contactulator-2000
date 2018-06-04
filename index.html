@@ -6,7 +6,8 @@ layout: post
 
 
 
-<tr> {%- for contacts in site.data.contacts.contacts -%}
+<tr>
+      {%- for contacts in site.data.contacts.contacts -%}
   <td class="name">{{contacts.name}}</td>
   <td class="street_address">{{contacts.street_address}}</td>
   <td class="city">{{contacts.city}}</td>
@@ -15,4 +16,5 @@ layout: post
   <td class="officephone">{{contacts.officephone}}</td>
   <td class="cellphone">{{contacts.cellphone}}</td>
   <td class="email">{{contacts.email}}</td>
-</tr>{%- endfor -%}
+</tr>
+       {%- endfor -%}
