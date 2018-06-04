@@ -1,17 +1,29 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap 4, from LayoutIt!</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
 
 
 
-         <div class="container">
-					<div class="row">
-						<div class="col-md-12">
-              <div id ="users">
-                  <input class="search" placeholder="Search"/>
-                  <button class="sort" data-sort="fname">
-                    Search
-                  </button>
+
+
+
+
   								<!--
                   <span class="sort" data-sort="lname">Sort by Last Name</span>
                   <span class="sort" data-sort="city">Sort by City </span>
@@ -20,92 +32,135 @@ layout: default
                   <span class="sort" data-sort-"cellphone">Sort by Cell Phone Number</span>
                   <span class="sort" data-sort="email">Sort by Email Address</span>
                   -->
+        <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+                <div id="users">
+                  <input class="search" placeholder="Begin Typing to Sort by Name or City " />
 
+                  <table>
 
-							<table>
-								<thead>
-									<tr>
-										<th>
-										First Name
-										</th>
-										<th>
-											Last Name
-										</th>
-										<th>
-											Street Address
-										</th>
-										<th>
-											City
-										</th>
-									 <th>
-                    State
-                  </th>
-                    <th>
-                    Office Number
-                    </th>
-                    <th>
-                      Cell Number
-                    </th>
-                    <th>
-                    Email
-                    </th>
-                  </tr>
-								</thead>
-								<tbody class="list">
-									<tr>
-										<td class="fname">
-											Greg
-										</td>
-										<td class="lname">
-											Johnson
-										</td>
-										<td class="street_address">
-											3245 Peachtree Street
-										</td>
-										<td class="city">
-											Atlanta
-                    </td>
-                    <td class="state">
-                      Georgia
-                    </td>
-                    <td class="officephone">
-                      404-735-9698
-                    </td>
-                    <td class="cellphone">
-                      404-363-4582
-                    </td>
-                    <td class="email">
-                      Greg.Johnson@nowhere.comv
-                    </td>
+                    <thead>
                     <tr>
-                      <td class="fname">
-                       Samuel
-                      </td>
-                      <td class="lname">
-                        Smithers
-                      </td>
-                      <td class="street_address">
-                        358 North Main Street
-                      </td>
-                      <td class="city">
-                        Lexington
-                      </td>
-                      <td class="state">
-                        Kentucky
-                      </td>
-                      <td class="officephone">
-                        404-575-6319
-                      </td>
-                      <td class="cellphone">
-                        404-258-6379
-                      </td>
-                      <td class="email">
-                        Sam.Smithers@nowhere.comv
-                       </td>
-                   	</tr>
-								</tbody>
-							</table>
-            </div>
-          </div>
+                      <th>
+                     Name
+                      </th>
+                      <th>
+                        Street Address
+                      </th>
+                      <th>
+                        City
+                      </th>
+                     <th>
+                      State
+                    </th>
+                      <th>
+                      Zip
+                      </th>
+                      <th>
+                        Cell Number
+                      </th>
+                      <th>
+                     Office Phone
+                      </th>
+                      <th>
+                        Email Address
+                      </th>
+                    </tr>
+                  </thead>
+                    <tbody class="list">    <!-- IMPORTANT, class="list" have to be at tbody -->
+
+                      <tr>
+                        <td class="name">Greg Johnson</td>
+                        <td class="street_address">3200 Peachtree Street</td>
+                        <td class="city">Atlanta</td>
+                        <td class="state">Georgia</td>
+                        <td class="zip">30303</td>
+                        <td class="officephone">404-572-6282</td>
+                        <td class="cellphone">404-735-5686</td>
+                        <td class="email">Greg.Johnson@nowhere.com</td>
+                      </tr>
+
+
+                      <tr>
+                        <td class="nname">Mike Simecox</td>
+                        <td class="street_address">5268 North Druid Hills Drive</td>
+                        <td class="city">Atlanta</td>
+                        <td class="state">Georgia</td>
+                         <td class="zip">30303</td>
+                        <td class="officephone">404-324-8596</td>
+                        <td class="cellphone">678-259-4295</td>
+                        <td class="email">Mike.Simcox@nowhere.com</td>
+                      </tr>
+                      <tr>
+                        <td class="name">Mandy Perteet</td>
+                        <td class="street_address">5268 Beecher Street</td>
+                        <td class="city">Atlanta</td>
+                        <td class="state">Georgia</td>
+                         <td class="zip">30303</td>
+                        <td class="officephone">404-529-4298</td>
+                       <td class="cellphone">404-254-8549</td>
+                        <td class="email">Mandy@42degeees.com</td>
+                      </tr>
+
+                      <tr>
+                        <td class="name">Mark Silbernagelt</td>
+                        <td class="street_address">1526 South Main Street</td>
+                        <td class="city">Lexington</td>
+                        <td class="state">Kentucky</td>
+                        <td class="zip">40502</td>
+                        <td class="officephone">859-258-4927</td>
+                        <td class="cellphone">859-729-7291</td>
+                        <td class="email">Mark@uky.edu</td>
+                      </tr>
+                      <tr>
+                        <td class="name">Sue Williams</td>
+                        <td class="street_address">206 Elizabeth Street</td>
+                        <td class="city">Lexington</td>
+                        <td class="state">Kentucky</td>
+                        <td class="zip">40511</td>
+                        <td class="officephone">859-567-4412</td>
+                        <td class="cellphone">859-725-5249</td>
+                        <td class="email">Sue@uky.edu</td>
+                      </tr>
+                         </tr>
+                     <tr>
+                        <td class="name">John Sweezey</td>
+                        <td class="street_address">819 Montgomery Avenue</td>
+                        <td class="city">Versailles</td>
+                        <td class="state">Kentucky</td>
+                        <td class="zip">40383</td>
+                        <td class="officephone">859-849-4593</td>
+                        <td class="cellphone">859-853-7129</td>
+                        <td class="email">Jon.Swwezey@nomail.com</td>
+                      </tr>
+
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+
+
 			</div> <!-- row -->
 	</div> <!-- container -->
+  <footer>
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <h3>
+            h3. Lorem ipsum dolor sit amet.
+          </h3>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+  </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
