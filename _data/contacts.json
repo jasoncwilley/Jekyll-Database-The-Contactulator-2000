@@ -1,0 +1,36 @@
+contacts:   [  
+    {
+        "name": "Greg Johnson",
+        "street_address": "3200 Peachtree Street",
+         "city": "Atlanta",
+         "state": "Georgia",
+         "zip": "30303",
+         "officephone": "404-572-6282",
+         "cellphone": "404-735-5686",
+         "email": "Greg.Johnson@nowhere.com",
+    },
+
+  {
+         "name": "Mike Simecox",
+         "street_address": "5268 North Druid Hills Drive",
+       "city": "Atlanta",
+       "state": "Georgia",
+       "zip": "30303",
+       "officephone": "404-324-8596",
+       "cellphone": "678-259-4295",
+       "email": "Mike.Simcox@nowhere.com",
+    },
+
+
+   {
+       "name": "Mandy Perteet",
+       "street_address": "5268 Beecher Street",
+       "city": "Atlanta",
+       "state": "Georgia",
+       "zip": "30303",
+       "officephone": "404-529-4298",
+        "cellphone": "404-254-8549",
+         "email": "Mandy@42degeees.com",
+      }
+
+  ]
