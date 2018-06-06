@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrap 4, from LayoutIt!</title>
+
+<meta name="description" content="Source code generated using layoutit.com">
+<meta name="author" content="LayoutIt!">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+<link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="assets/css/style.css" rel="stylesheet"></link>
+<script src="assets/css/js/scripts.js"></script>
+
+</head>
+
+<body>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<!--
+          <span class="sort" data-sort="lname">Sort by Last Name</span>
+          <span class="sort" data-sort="city">Sort by City </span>
+          <span class="sort" data-sort-"state">Sort by State</span>
+          <span class="sort" data-sort="officephone">Sort by Office Phone Number</span>
+          <span class="sort" data-sort-"cellphone">Sort by Cell Phone Number</span>
+          <span class="sort" data-sort="email">Sort by Email Address</span>
+          -->
+<div class="row">
+    <div class="col-md-12">
+        <div id="users">
+            <input class="search" placeholder="Begin Typing to Sort by Name or City " />
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Street Address
+                        </th>
+                        <th>
+                            City
+                        </th>
+                        <th>
+                            State
+                        </th>
+                        <th>
+                            Zip
+                        </th>
+                        <th>
+                            Cell Number
+                        </th>
+                        <th>
+                            Office Phone
+                        </th>
+                        <th>
+                            Email Address
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="list">
+                   {%- for contacts in data.contacts.contacts -%}
+                  <tr>
+                    <td class="name">{{contacts.name}}</td>
+                    <td class="street_address">{{contacts.street_address}}</td>
+                    <td class="city">{{contacts.city}}</td>
+                    <td class="state">{{contacts.state}}</td>
+                    <td class="zip">{{contacts.zip}}</td>
+                    <td class="officephone">{{contacts.officephone}}</td>
+                    <td class="cellphone">{{contacts.cellphone}}</td>
+                    <td class="email">{{contacts.email}}</td>
+                  </tr>
+                    {%- endfor -%}
+
+
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+
+</footer>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/list.js"></script>
+</body>
+
+</html>

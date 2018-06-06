@@ -1,0 +1,25 @@
+---
+layout: page
+
+---
+
+<tbody class="list">
+    {%- for order in data.orders.order -%}
+    <td class="guid">{{ order.guid }}</td>
+    <td class="registered">{{ order.registered}}
+        <td>/>
+            <td class="balance">{{order.balance}}</td>
+            <td class="fname">{{order.fname}}</td>
+            <td class="lname">{{order.lname}}</td>
+            <td class="company">{{order.company}}</td>
+            <td class="email">{{order.email}}</td>
+            <td class="phone">{{order.phone}}</td>
+            <td class="address">{{order.address}}</td>
+            <td class="isActive">{{order.isActive}}</td>
+            <td class="latitude">{{order.latitude}}</td>
+            <td class="longitude">{{order.longitude}}</td>
+</tbody>
+{%- endfor -%}
+
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
