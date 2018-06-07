@@ -1,0 +1,55 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Styleguide</title>
+  <meta name="author" content="Pingendo">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/darktheme.css" type="text/css"> </head><body class="text-primary">
+
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Contactulator 2000</h2>
+          <hr>
+          <div class="row text-center">
+            <div class="col-md-12 bg-primary m-2">
+              <p class="m-0 p-4">Primary</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+
+           <div class="containter">
+            <div class="row">
+              <div class="col-7">
+                <div class= "card">
+                <div class="list-group" id="list-tab" role="tablist">
+                   {% for contact in site.data.contacts %}
+                  <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                    Name:{{contact.name}}</a>
+                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                    Phone:{{contact.company}}</a>
+                  <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                    Email:{{contact.email}}</a>
+                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                    Address: {{contact.address}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containter">
+         <div class="row">
+           <div class="col-7">
+             <div class= "card">{%- endfor -%}
+             <div class="list-group" id="list-tab" role="tablist">
