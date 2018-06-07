@@ -5,51 +5,150 @@ layout: none
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- PAGE settings -->
-  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
-  <title>Styleguide</title>
-  <meta name="author" content="Pingendo">
+
+  <meta name="author" content="JasonCWilley">
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="/assets/css/darktheme.css" type="text/css"> </head><body class="text-primary">
+  <link rel="stylesheet" href="/assets/css/darktheme.css" type="text/css">
 
+</head>
+
+  <body class="text-primary">
   <div class="py-4">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h2>Contactulator 2000</h2>
           <hr>
-          <div class="row text-center">
-            <div class="col-md-12 bg-primary m-2">
-              <p class="m-0 p-4">Primary</p>
-            </div>
-          </div>
+
         </div>
       </div>
-
-
-      </div>
+    </div>  <!-- end of conatinaer-->
 
            <div class="containter">
             <div class="row">
               <div class="col-7">
-                <div class= "card">
-                <div class="list-group" id="list-tab" role="tablist">
-                   {% for contact in site.data.contacts %}
-                  <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
-                    Name:{{contact.name}}</a>
-                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
-                    Phone:{{contact.company}}</a>
-                  <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
-                    Email:{{contact.email}}</a>
-                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
-                    Address: {{contact.address}}</a>
-                </div>
-              </div>
-            </div>
+<style>
+.filterDiv {
+
+  background-color: black;
+  color: #ffffff;
+
+  margin-bottom: 10px;
+
+  line-height: 40px;
+  text-align: left;
+  margin: 2px;
+  min-width: 400px;;
+  max-height: 350px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  overflow: hidden;
+}
+.btn {
+
+border-color: white;
+border-width: 2px
+  padding: 12px 16px;
+  background-color: #f1cd31;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f1cd31;
+
+  border-color: white;
+  border-width: 2px
+}
+
+.btn.active {
+  background-color: #f1cd31;
+
+  color: black;
+  border-color: white;
+  border-width: 5px
+}
+</style>
+<body>
+
+<h2>Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('ORBEAN')"> ORBEAN</button>
+  <button class="btn" onclick="filterSelection('OBONES')"> OBONES</button>
+  <button class="btn" onclick="filterSelection('ZORK')"> ZORK</button>
+</div>
+
+
+
+
+ {% for contact in site.data.contacts %}
+                  <div class="filterDiv {{contact.company}}">{{contact.company}}<div>
+
+                   <ul>
+                  <li><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                    Name:&nbsp;&nbsp;{{contact.name}}<br>
+                    Email:&nbsp;&nbsp;{{contact.email}}<br>
+                    Phone:&nbsp;&nbsp;{{contact.phone}}<br>
+                    Address:&nbsp;&nbsp;{{contact.address}}</a></li>
+                  </ul>
           </div>
-        </div>
-        <div class="containter">
-         <div class="row">
-           <div class="col-7">
-             <div class= "card">{%- endfor -%}
-             <div class="list-group" id="list-tab" role="tablist">
+</div>{%- endfor -%}
+
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
