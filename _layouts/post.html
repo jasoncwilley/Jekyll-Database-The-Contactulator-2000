@@ -16,15 +16,35 @@ layout: none
 
 <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
 <link href="assets/css/orders.css" rel="stylesheet"></link>
+<link href="assets/css/darktheme.css" rel="stylesheet"></link>
 </head>
 
 <body>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Contactulator 2000</h2>
+          <hr>
+
+        </div>
+      </div>
+    </div>  <!-- end of conatinaer-->
+
 
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <div id="mybuttons">
+       <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
+       <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
+       <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update the Database</a>
+
+
+      </div>
         <div id="users">
-            <input class="search" placeholder="Begin Typing to Sort by Name or City " />
+            <input class="search" placeholder="Search by Contact or Company " />
+
 
 <table>
 <tbody class="list">

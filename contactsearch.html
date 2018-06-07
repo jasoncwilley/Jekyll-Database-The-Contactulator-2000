@@ -21,6 +21,10 @@ layout: none
           <h2>Contactulator 2000</h2>
           <hr>
 
+            <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
+            <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
+            <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update the Database</a>
+
         </div>
       </div>
     </div>  <!-- end of conatinaer-->
@@ -50,40 +54,44 @@ layout: none
 
 .container {
   overflow: hidden;
-}
-.btn {
 
-border-color: white;
-border-width: 2px
-  padding: 12px 16px;
-  background-color: #</a></li>;
-  cursor: pointer;
 }
+  .btn {
+  align-self: right!important;
+  color: white!important;
+  background-color: #111!important;
+  padding-bottom: 5px!important;
+  margin-bottom:20px;
+  }
 
 .btn:hover {
   background-color: #f1cd31;
 
-  border-color: white;
+  border-color: #f1cd31;
   border-width: 2px
 }
 
 .btn.active {
-  background-color: #f1cd31;
-
-  color: black;
+  background-color: #111;
+  color: yellow;
   border-color: white;
-  border-width: 5px
+  border-width: 2px;
 }
 </style>
 <body>
+  
+<div class="containter">
+
+   <div class="col-7">
 
 <h2>Filter DIV Elements</h2>
 
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('ORBEAN')"> ORBEAN</button>
-  <button class="btn" onclick="filterSelection('OBONES')"> OBONES</button>
-  <button class="btn" onclick="filterSelection('ZORK')"> ZORK</button>
+<button class="btn" onclick="filterSelection('all')"> Show all</button>
+<button class="btn" onclick="filterSelection('ORBEAN')"> ORBEAN</button>
+<button class="btn" onclick="filterSelection('OBONES')"> OBONES</button>
+<button class="btn" onclick="filterSelection('ZORK')"> ZORK</button>
+</div>
 </div>
 
 
