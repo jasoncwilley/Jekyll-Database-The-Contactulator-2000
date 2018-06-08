@@ -30,7 +30,11 @@ align-self: right!important;
 color: white!important;
 background-color: #111!important;
 padding-bottom: 5px!important;
-margin-bottom:20px;
+margin-bottom:20px!important;
+
+margin-top: 10px!important;
+
+;
 }
 
 
@@ -50,11 +54,11 @@ margin-bottom:20px;
 }
 table {
   padding: 25px;
-  border:solid 1px;
-  border-color: #ffc107;
+  border:solid 1px!important;
+  border-color: #ffc107!important;
   background-color: #111;
-  color: white;
-  margin-top: 25px;
+  color: white!important;
+  margin-top: 25px!important;
 }
 
 th {
@@ -89,14 +93,14 @@ tbody {
   margin-top: 25px
 }
 tr {
-  padding-top: 10px;
-  padding-left: 15px;
+  padding-top: 10px!important;;
+  padding-left: 15px!important;
   font-size: 16px;
   margin:0 0 0.3rem;
   font-weight: normal;
-  border:solid 1px;
+  border:solid 1px!important;;
   border-color: #ffc107;
-  background-color: #111;
+  background-color: #111!important;
 
 }
 
