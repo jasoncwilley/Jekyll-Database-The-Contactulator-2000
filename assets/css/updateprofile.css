@@ -60,7 +60,14 @@ thead {
   }
 
 
+.navfooter{
 
+  color: white!important;
+  padding-top: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+
+}
 
 tbody {
 
@@ -108,59 +115,37 @@ input {
  color: white!important;
 
 }
+#updatesName {
+
+  background-color: #111;
+  fornt: 12px;
+}
+#updatesPhone {
+  background-color: #111;
+
+}
+
+
+#updatesEmail{
+
+  background-color: #111;
+
+}
+#updatesAddress {
+  background-color: #111;
+
+}
+
+
+#updatesLink {
+
+  background-color: #111;
+
+}
+
 
 
 input:focus {
 border:solid 2px;
   border-color:white!important;
-}
-.sort {
-  padding:8px 30px;
-  border-radius: 6px;
-  border:none;
-  display:inline-block;
-  color:#fff;
-  text-decoration: none;
-  background-color: #111;
-  height:50px;
-}
-.sort:hover {
-  text-decoration: none;
-  background-color:#1b8aba;
-}
-.sort:focus {
-  border: 3px;
-}
-.sort:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
-}
-.sort.asc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:13px;
-  right:-5px;
-}
-.sort.desc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
 }

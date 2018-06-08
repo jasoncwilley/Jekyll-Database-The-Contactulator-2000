@@ -4,4 +4,4 @@
 _site
 Gemfile.lock
 /assets/js/updateprofile.js
-_layouts/updateprofile.html
+updateprofile.html

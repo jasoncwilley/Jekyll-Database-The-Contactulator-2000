@@ -7,16 +7,17 @@ layout: none
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Bootstrap 4, from LayoutIt!</title>
+<title>Recent Orders</title>
 
 <meta name="description" content="Source code generated using layoutit.com">
 <meta name="author" content="LayoutIt!">
 <script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
-<link href="assets/css/orders.css" rel="stylesheet"></link>
-<link href="assets/css/darktheme.css" rel="stylesheet"></link>
+<link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="{{site.baseurl}}/assets/css/darktheme.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/ordersearch.css" type="text/css">
+
 </head>
 
 <body>
@@ -37,7 +38,7 @@ layout: none
     <div class="col-md-12">
       <div id="mybuttons">
        <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
-       <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
+       <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
        <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update the Database</a>
 
 
@@ -48,13 +49,16 @@ layout: none
 
 <table>
 <tbody class="list">
-    {% for contact in site.data.contacts %}
+    {% for order in site.data.recentorders %}
          <tr>
-            <td class="company">{{contact.company}}</td>
-            <td class="name">{{contact.name}}</td>
-            <td class="email">{{contact.email}}</td>
-            <td class="phone">{{contact.phone}}</td>
-            <td class="address">{{contact.address}}</td>
+            <td class="_id">{{order._id}}</td>
+            <td class="balance">{{order.balance}}</td>
+            <td class="email">{{order.registered}}</td>
+            <td class="company">{{order.company}}</td>
+            <td class="name">{{order.name}}</td>
+            <td class="email">{{order.email}}</td>
+            <td class="phone">{{order.phone}}</td>
+            <td class="address">{{order.address}}</td>
          </tr>
         {%- endfor -%}
          </tbody>
