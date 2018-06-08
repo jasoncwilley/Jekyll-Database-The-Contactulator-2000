@@ -16,9 +16,13 @@ body {
 h2 {
   font-family:sans-serif;
   color: #ffc107!important;
-  font-size: 35px!important;
+  font-size: 25px!important;
 }
+h3 {
+  color: white;
+  text-align:  center;
 
+}
 
 
 .btn {
@@ -53,11 +57,20 @@ table {
   margin-top: 25px;
 }
 
-thead {
+th {
+  font-size: 12px!important;
+  border-width: 1px!important;
+  text-align: center!important;
+  border-color: #ffc107!important;
+}
+tr {
+  font-size: 12px!important;
+  border-width: 1px!important;
+  text-align: center!important;
+  border-color: #ffc107!important;
 
-    padding-top: 35px;
-    padding bottom: 25px;
-  }
+}
+
 
 
 .navfooter{
@@ -66,7 +79,7 @@ thead {
   padding-top: 25px;
   margin-bottom: 35px;
   text-align: center;
-
+  font-size: 12px;
 }
 
 tbody {
@@ -118,30 +131,53 @@ input {
 #updatesName {
 
   background-color: #111;
-  fornt: 12px;
+  font: 12px;
+  border-width: 1px;
+  border-color: #ffc107;
+  max-width: 500px;
 }
 #updatesPhone {
   background-color: #111;
-
+  font: 12px;
+  border-width: 1px;
+  border-color: #ffc107;
+  max-width: 500px;
 }
 
 
 #updatesEmail{
-
   background-color: #111;
-
+  font: 12px;
+  border-width: 1px;
+  border-color: #ffc107;
+  max-width: 500px;
 }
 #updatesAddress {
   background-color: #111;
-
+  font: 12px;
+  border-width: 1px;
+  border-color: #ffc107;
+  max-width: 500px;
 }
 
 
 #updatesLink {
-
   background-color: #111;
+  font: 12px;
+  border-width: 1px;
+  border-color: #ffc107;
+  max-width: 500px;
 
+
+#updatesNotes {
+  background-color: #111;
+  font: 12px;
+  border-width: 1px;
+  border-color: #ffc107;
+  max-width: 500px;
+  min-height: 50px;
 }
+
 
 
 
