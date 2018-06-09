@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+---
+layout: none
+---
 <html>
 
-<head>
-  <meta charset="utf-8">
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Submit Updates</title>
+<title>Recent Orders</title>
 
 <meta name="description" content="Source code generated using layoutit.com">
 <meta name="author" content="LayoutIt!">
@@ -19,28 +20,16 @@
 <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
+<!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
 
 
 <link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet"></link>
 <link href="{{site.baseurl}}/assets/css/darktheme.css" rel="stylesheet"></link>
-<link href="{{site.baseurl}}/assets/css/updateprofile.css" rel="stylesheet"></link>
-<script type="text/script" src="{{site.baseurl}}/assets/js/updateprofile.js"></script>
-
-</head>
-
-<body>
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div id="mybuttons">
-       <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
-       <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
-       <a href="{{site.baseurl}}/index.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Home </a>
-
-
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/ordersearch.css" type="text/css">
+<script src="{{site.baseurl}}/assets/js/updateprofile.js"></script>
 
 </head>
 
@@ -57,6 +46,15 @@
     </div>  <!-- end of conatinaer-->
 
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="mybuttons">
+       <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
+       <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
+       <a href="{{site.baseurl}}/index.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Home</a>
+
+
       </div>
 
 
@@ -64,11 +62,10 @@
   <!-- Load the appltext-primaryication script, which will save data to our Firebase app when we click the button. -->
 
     <div class="container">
-      <div class='navfooter'>
-      <h5></h5>
+      <h1>Please complete the form below to update Contactulator 2000's Database</h1>
 
+      <h3>Enter the Address in the following form- Street Number, Street, City, State, Zip</h3>
 
-    </div>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -77,7 +74,6 @@
             <th>Email</th>
             <th>Address</th>
             <th>Website Link</th>
-             <th>Account Notes</th>
           </tr>
         </thead>
         <tbody>
@@ -88,48 +84,41 @@
             <td id="email"></td>
             <td id="address"></td>
             <td><a id="link" target="_blank"></a></td>
-            <td id="accountnotes"></td>
           </tr>
         </tbody>
       </table>
 
-
+      <h3>Submit an Uupdat</h3>
 
       <form id="recommendationForm">
         <div class="form-group">
-          <label for="updatesName"></label>
+          <label for="updatesName">name</label>
           <input class="form-control" id="updatesName" placeholder="Name">
         </div>
         <form id="recommendationForm">
           <div class="form-group">
-            <label for="updatesPhone"></label>
+            <label for="updatesPhone">phone</label>
             <input class="form-control" id="updatesPhone" placeholder="Phone Number">
           </div>
           <form id="recommendationForm">
             <div class="form-group">
-              <label for="updatesEmail"></label>
+              <label for="updatesEmail">Email Address</label>
               <input class="form-control" id="updatesEmail" placeholder="Email Address">
             </div>
           <form id="recommendationForm">
         <div class="form-group">
-          <label for="updatesAddress"></label>
+          <label for="updatesAddress">Address</label>
           <input class="form-control" id="updatesAddress" placeholder="Address">
         </div>
        <form id="recommendationForm">
         <div class="form-group">
-          <label for="updatesLink"></label>
+          <label for="updatesLink">Link</label>
           <input type="url" class="form-control" id="updatesLink" placeholder="Website Address">
         </div>
-        <form id="recommendationForm">
-        <div class="form-group">
-          <label for="updatesAccountnotes"></label>
-          <input class="form-control" id="updatesAccountnotes" placeholder="Account Notes">
-        </div>
-        <div id="mybuttons">
-         <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Submit Updates
 
-        </div>
-
-<a>***Note: the form utilizes an external an external database</a>
-   <a>README.md contains additional information and instructions on how to deploy it on free Firebase web app database***</a>
+        <!-- When you click this button, trigger the submit event on this form. -->
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
