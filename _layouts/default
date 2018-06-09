@@ -1,7 +1,3 @@
 ---
 
 ---
-
-{% if page.form %}{% include form.html %}{% endif %}
-
-(( content ))

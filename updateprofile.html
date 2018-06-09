@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Submit Updates</title>
+
+<meta name="description" content="Source code generated using layoutit.com">
+<meta name="author" content="LayoutIt!">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Load the Firebase library before loading the body. -->
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+
+<!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+
+
+<link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="{{site.baseurl}}/assets/css/darktheme.css" rel="stylesheet"></link>
+<link href="{{site.baseurl}}/assets/css/updateprofile.css" rel="stylesheet"></link>
+<script type="text/script" src="{{site.baseurl}}/assets/js/updateprofile.js"></script>
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="mybuttons">
+       <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
+       <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
+       <a href="{{site.baseurl}}/index.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Home </a>
+
+
+
+</head>
+
+<body>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Contactulator 2000</h2>
+          <hr>
+
+        </div>
+      </div>
+    </div>  <!-- end of conatinaer-->
+
+
+      </div>
+
+
+
+  <!-- Load the appltext-primaryication script, which will save data to our Firebase app when we click the button. -->
+
+    <div class="container">
+      <div class='navfooter'>
+      <h5></h5>
+
+
+    </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Website Link</th>
+             <th>Account Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- This is empty for now, but it will be filled out by an event handler in application.js with the most recent recommendation data from Firebase. -->
+            <td id="name"></td>
+            <td id="phone"></td>
+            <td id="email"></td>
+            <td id="address"></td>
+            <td><a id="link" target="_blank"></a></td>
+            <td id="accountnotes"></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <form id="recommendationForm">
+        <div class="form-group">
+          <label for="updatesName"></label>
+          <input class="form-control" id="updatesName" placeholder="Name">
+        </div>
+        <form id="recommendationForm">
+          <div class="form-group">
+            <label for="updatesPhone"></label>
+            <input class="form-control" id="updatesPhone" placeholder="Phone Number">
+          </div>
+          <form id="recommendationForm">
+            <div class="form-group">
+              <label for="updatesEmail"></label>
+              <input class="form-control" id="updatesEmail" placeholder="Email Address">
+            </div>
+          <form id="recommendationForm">
+        <div class="form-group">
+          <label for="updatesAddress"></label>
+          <input class="form-control" id="updatesAddress" placeholder="Address">
+        </div>
+       <form id="recommendationForm">
+        <div class="form-group">
+          <label for="updatesLink"></label>
+          <input type="url" class="form-control" id="updatesLink" placeholder="Website Address">
+        </div>
+        <form id="recommendationForm">
+        <div class="form-group">
+          <label for="updatesAccountnotes"></label>
+          <input class="form-control" id="updatesAccountnotes" placeholder="Account Notes">
+        </div>
+        <div id="mybuttons">
+         <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Submit Updates
+
+        </div>
+
+<a>***Note: the form utilizes an external an external database</a>
+   <a>README.md contains additional information and instructions on how to deploy it on free Firebase web app database***</a>
+</html>
