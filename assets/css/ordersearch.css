@@ -6,38 +6,34 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent; }
 
+.navfooter {
+  font-size: 6px!important;
+}
 body {
   background-color: #111;
   text: white;
   font-family:sans-serif!important;
+  background-image: url(/assets/gbhexy.jpg)!important;
 
 }
 
 h2 {
   font-family:sans-serif;
-  color: #ffc107!important;
-  font-size: 35px!important;
+  color: white!important;
+  font-size: 45px!important;
+  background-color: #303030!important;
+  width: 400px!important;
 }
-
 
 
 .btn {
 align-self: right!important;
-color: white!important;
+color: #ffc107!important;
 background-color: #111!important;
 padding-bottom: 5px!important;
 margin-bottom:20px;
 }
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 500px;
-  line-height: 250px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
+
 
 .list {
   font-family:sans-serif;
@@ -68,6 +64,15 @@ thead {
     padding bottom: 25px;
   }
 
+
+
+  .btn {
+  align-self: right!important;
+  color: white!important;
+  background-color: #111!important;
+  padding-bottom: 5px!important;
+  margin-bottom:20px;
+  }
 
 
 
@@ -110,9 +115,9 @@ p {
 input {
   border:solid 1px #ffc107;
   border-radius: 1px;
-  margin-left: 20px;
-  background-color:#111;
- min-width: 200px!important;
+  length: 350px!important;
+  background-color: #111!important;
+ width: 200px!important;
  min-height: 35px!important;
  color: white!important;
 

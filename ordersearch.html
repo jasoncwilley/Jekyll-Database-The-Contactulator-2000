@@ -16,7 +16,7 @@ layout: none
 
 <link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet"></link>
 <link href="{{site.baseurl}}/assets/css/darktheme.css" rel="stylesheet"></link>
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/orders.css" type="text/css">
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/ordersearch.css" type="text/css">
 
 </head>
 
@@ -37,15 +37,16 @@ layout: none
   <div class="row">
     <div class="col-md-12">
       <div id="mybuttons">
-       <a href="{{site.baseurl}}/contacts.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
-       <a href="{{site.baseurl}}/updateprofile.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update Database/a>
        <a href="{{site.baseurl}}/index.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Home</a>
+       <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
+       <a href="{{site.baseurl}}/updateprofile.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update the Database</a>
 
 
       </div>
         <div id="users">
-            <input class="search" style="width:350px;color:white" placeholder="Enter OrderID, Company or Shipping Address" />
-
+            <input placeholder="Enter Order Details here... " />
+            <span class="sort" data-sort="company">Click to Sort by Company</span>
+              <span class="sort" data-sort="_id">Click to Sort by OrderID</span>
 
 <table>
 <tbody class="list">
@@ -69,8 +70,8 @@ layout: none
 </div>
 </div>
 </footer>
-<script type="text/javascript" src="{{site.baseurl}}/assets/js/scripts.js"></script>
-
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>

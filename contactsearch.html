@@ -20,11 +20,12 @@ layout: none
         <div class="col-12">
 
           <h2>Contactulator 2000</h2><a class="navfooter">Feature Rich Jekyll Database with optional Firebase RESTful API configuration.</a>
+<hr>
 
+            <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
+            <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
+            <a href="{{site.baseurl}}/contactsearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update the Database</a>
 
-            <a href="{{site.baseurl}}/contacts.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Company Contacts</a>
-            <a href="{{site.baseurl}}/contacts.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update Database</a>the Database</a>
-            <a href="{{site.baseurl}}/index.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Homw</a>
         </div>
       </div>
     </div>  <!-- end of conatinaer-->
@@ -88,7 +89,7 @@ layout: none
 
 <div id="myBtnContainer">
 <button class="btn" onclick="filterSelection('all')"> Show all</button>
-<button class="btn" onclick="filterSelection('ORBEAN')"> ORBEAN</button>
+<button class="btn" onclick="filterSelection('ExiZero')"> ORBEAN</button>
 <button class="btn" onclick="filterSelection('OBONES')"> OBONES</button>
 <button class="btn" onclick="filterSelection('ZORK')"> ZORK</button>
 </div>
@@ -97,18 +98,21 @@ layout: none
 
 
 
- {% for contact in site.data.contacts %}
-                  <div class="filterDiv {{contact.company}}">{{contact.company}}<div>
+<div class="container">
+  <div class="col-sm-8">
+{% for contact in site.data.contacts %}
 
-                   <ul>
-                  <li><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
-                    Name:&nbsp;&nbsp;{{contact.name}}<br>
-                    Email:&nbsp;&nbsp;{{contact.email}}<br>
-                    Phone:&nbsp;&nbsp;{{contact.phone}}<br>
-                    Address:&nbsp;&nbsp;{{contact.address}}</a></li>
-                  </ul>
-          </div>
-</div>{%- endfor -%}
+        <div class="filterDiv {{contact.company}}">
+          <ul>
+         <h3>{{contact.company}}</h3>
+          <li>Contact: {{contact.name}}</li>
+          <li>Phone: {{contact.phone}}</li>
+          <li>Email:  {{contact.email}}</li>
+        </ul>
+        </div>
+{%- endfor -%}
+</div>
+</div>
 
 
 

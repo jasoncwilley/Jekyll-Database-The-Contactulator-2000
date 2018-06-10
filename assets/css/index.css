@@ -6,23 +6,25 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent; }
 
+.navfooter {
+  font-size: 6px!important;
+}
 body {
   background-color: #111;
-  text: black;
+  text: white!important;
   font-family:sans-serif!important;
+  background-image: url(/assets/gbhexy.jpg)!important;
 
 }
 
 h2 {
   font-family:sans-serif;
-  color: #ffc107!important;
-  font-size: 25px!important;
+  color: white!important;
+  font-size: 45px!important;
+  background-color: #303030!important;
+  width: 400px!important;
 }
-h3 {
-  color: white;
-  text-align:  center;
 
-}
 
 
 .btn {
@@ -57,30 +59,23 @@ table {
   margin-top: 25px;
 }
 
-th {
-  font-size: 12px!important;
-  border-width: 1px!important;
-  text-align: center!important;
-  border-color: #ffc107!important;
-}
-tr {
-  font-size: 12px!important;
-  border-width: 1px!important;
-  text-align: center!important;
-  border-color: #ffc107!important;
+thead {
 
-}
+    padding-top: 35px;
+    padding bottom: 25px;
+  }
 
 
 
-.navfooter{
-
+  .btn {
+  align-self: right!important;
   color: white!important;
-  padding-top: 25px;
-  margin-bottom: 35px;
-  text-align: center;
-  font-size: 12px;
-}
+  background-color: #111!important;
+  padding-bottom: 5px!important;
+  margin-bottom:20px;
+  }
+
+
 
 tbody {
 
@@ -121,67 +116,66 @@ p {
 input {
   border:solid 1px #ffc107;
   border-radius: 1px;
-  margin-left: 20px;
-  background-color:#111;
- min-width: 200px!important;
+  length: 350px!important;
+  background-color: #111!important;
+ width: 200px!important;
  min-height: 35px!important;
  color: white!important;
 
 }
-#updatesName {
-
-  background-color: #111;
-  font: 12px;
-  border-width: 1px;
-  border-color: #ffc107;
-  max-width: 500px;
-}
-#updatesPhone {
-  background-color: #111;
-  font: 12px;
-  border-width: 1px;
-  border-color: #ffc107;
-  max-width: 500px;
-}
-
-
-#updatesEmail{
-  background-color: #111;
-  font: 12px;
-  border-width: 1px;
-  border-color: #ffc107;
-  max-width: 500px;
-}
-#updatesAddress {
-  background-color: #111;
-  font: 12px;
-  border-width: 1px;
-  border-color: #ffc107;
-  max-width: 500px;
-}
-
-
-#updatesLink {
-  background-color: #111;
-  font: 12px;
-  border-width: 1px;
-  border-color: #ffc107;
-  max-width: 500px;
-
-
-#updatesNotes {
-  background-color: #111;
-  font: 12px;
-  border-width: 1px;
-  border-color: #ffc107;
-  max-width: 500px;
-  min-height: 50px;
-}
-
-
 
 
 input:focus {
 border:solid 2px;
   border-color:white!important;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #111;
+  height:50px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  border: 3px;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
 }
