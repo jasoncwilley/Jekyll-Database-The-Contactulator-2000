@@ -1,0 +1,69 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="/assets/css/contacts.css" type="text/css">
+  <script type="text/javascript" src="assets/js/contacts.js"></script>
+
+
+  </head>
+
+ <body>
+    <div class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Contactulator 2000</h2>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container">
+    <div class="col-sm-12">
+
+		<div id="myBtnContainers">
+      <button class= "btn btn-primary active" onclick= "filterSelection('all')">Show All</button>
+      <button class= "btn btn-primary"  onclick= "filterSelection('ExitZero')">ExitZero</button>
+      <button class= "btn btn-primary" onclick= "filterSelection('Tiller & Sons')">Tiller & Sons</button>
+      <button class= "btn btn-primary"  onclick= "filterSelection('Jackson & Associates')">Jacson & Associates</button>
+      <button class= "btn btn-primary"  onclick= "filterSelection('Numerix')">Numerix</button>
+      <button class= "btn btn-primary"  onclick= "filterSelection('Authorinc')">Auhor,Inc.</button>
+      <button class= "btn btn-primary"  onclick= "filterSelection('Kingco')">King Company</button>
+      <button class= "btn btn-primary"  onclick= "filterSelection('Sugarland')">Sugaland Company</button>
+  </div>
+
+				<div class="container">
+          <div class="col-sm-8">
+{% for contact in site.data.contacts %}
+
+                <div class="filterDiv {{contact.company}}">
+                <h3>{{contact.company}}</h3>
+                  <li>Phone: {{contact.phone}}</li>
+                  <li>Email:  {{contact.email}}</li>
+                </div>
+{%- endfor -%}
+
+           </div>
+        </div>  <!-- container --> 
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    </body>
+
+
+
+</html>

@@ -28,7 +28,16 @@ background-color: #111!important;
 padding-bottom: 5px!important;
 margin-bottom:20px;
 }
-
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 500px;
+  line-height: 250px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
 
 .list {
   font-family:sans-serif;

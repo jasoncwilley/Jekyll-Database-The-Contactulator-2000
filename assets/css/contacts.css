@@ -1,0 +1,148 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  background-color: #111;
+  text: white;
+  font-family:sans-serif!important;
+
+}
+
+h2 {
+  font-family:sans-serif;
+  color: #ffc107!important;
+  font-size: 35px!important;
+}
+
+
+
+.btn {
+align-self: right!important;
+color: white!important;
+background-color: #111!important;
+padding-bottom: 5px!important;
+margin-bottom:20px;
+}
+
+
+.btn:hover {
+  border-color: white!important;
+  border-width: 2px!important;
+}
+
+
+.btn.active {
+  background-color: white!important;
+  color: #ffc107!important;
+}
+
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 500px;
+  line-height: 250px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: <html>
+
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #111;
+  color: #ffc207;
+  width: 350px;
+  height: 110px;
+  line-height: 25px;
+  text-align: left;
+  margin: 2px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #ffc207;
+  display: none; /* Hidden by default */
+}
+
+
+
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+
+
+
+
+
+
+input {
+  border:solid 1px #ffc107;
+  border-radius: 1px;
+  margin-left: 20px;
+  background-color:#111;
+ min-width: 200px!important;
+ min-height: 35px!important;
+ color: white!important;
+
+}
+
+
+input:focus {
+border:solid 2px;
+  border-color:white!important;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: green;
+  color: green;
+}
+
+.btn {
+align-self: right!important;
+color: #ffc107;
+background-color: #ffc107!important;
+padding-bottom: 5px!important;
+
+border-width: 1px!important;
+border-color: red!important;
+}
+
+
+h2 {
+  font-family:sans-serif;
+  color: #ffc107!important;
+  font-size: 35px!important;
+}

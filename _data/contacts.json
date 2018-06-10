@@ -1,43 +1,51 @@
 [
     {
     "name": "Chris Mann",
-    "company": "WARETEL",
+    "company": "ExitZero",
     "email": "chrismann@waretel.com",
     "phone": "+1 (852) 467-2050",
     "address": "481 Kiely Place Ryderwood Louisiana 61302"
   },
   {
     "name": "Annette Stanley",
-    "company": "ORBEAN",
+    "company": "Tiller & Sons",
     "email": "annettestanley@orbean.com",
     "phone": "+1 (837) 582-3080",
     "address": "765 Navy Walk Wyoming Ohio 98602"
   },
   {
     "name": "Myers Foreman",
-    "company": "OBONES",
+    "company": "Jackson & Associates",
     "email": "myersforeman@obones.com",
     "phone": "+1 (949) 494-2254",
     "address": "997 Lewis Avenue Floris Guam 96532"
   },
   {
     "name": "Sweeney Reynolds",
-    "company": "ZORK",
+    "company": "Numberix",
     "email": "sweeneyreynolds@zork.com",
     "phone": "+1 (953) 440-2122",
     "address": "386 Rockwell Place Crawfordsville Kentucky 39182"
   },
   {
     "name": "Jaclyn Walters",
-    "company": "ZORK",
+    "company": "Arthur Inc",
     "email": "jaclynwalters@isotronic.com",
     "phone": "+1 (995) 417-3880",
     "address": "260 Pulaski Street Takilma Delaware 45202"
   },
   {
     "name": "Cox Norton",
-    "company": "OBONES",
+    "company": "King Company",
     "email": "coxnorton@digifad.com",
+    "phone": "+1 (989) 571-3005",
+    "address": "874 Frank Court Lewis Washington 55490"
+  },
+
+  {
+    "name": "Sugar Williams",
+    "company": "Sugarland Company",
+    "email": "Sugar@sugarland.com",
     "phone": "+1 (989) 571-3005",
     "address": "874 Frank Court Lewis Washington 55490"
   }

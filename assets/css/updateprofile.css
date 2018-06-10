@@ -31,11 +31,45 @@ color: white!important;
 background-color: #111!important;
 padding-bottom: 5px!important;
 margin-bottom:20px!important;
-
-margin-top: 10px!important;
-
-;
 }
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  border-color: white!important;
+  border-width: 2px!important;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: white!important;
+  color: #ffc107!important;
+}
+
+
+
+
+
+.container {
+    overflow: hidden;
+}
+.show {
+  display:block;
+}
+
+.container {
+    overflow: hidden;
+}
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 500px;
+    line-height: 250px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+}
+
+
 
 
 .list {
