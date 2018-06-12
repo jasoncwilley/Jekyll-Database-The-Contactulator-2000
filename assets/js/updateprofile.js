@@ -29,7 +29,10 @@ var submitRecommendation = function () {
   var email = $("#updatesEmail").val();
   var link = $("#updatesLink").val();
   var phone =$("#updatesPhone").val();
-  var address = $("#updatesAddress").val();
+  var street = $("#updatesStreet").val();
+  var city = $("#updatesCity").val();
+  var state = $("#updatesState").val();
+  var zip = $("#updatesZip").val();
   var customerid = $("#updatesCustomerid").val();
   var notes = $("#updatesNotes").val();
   // Push a new recommendation to the database using those values
@@ -38,7 +41,10 @@ var submitRecommendation = function () {
     "email": email,
     "link": link,
     "phone": phone,
-    "address": address,
+    "street": street,
+    "city": city,
+    "state": state,
+    "zip": zip,
     "customerid": customerid,
     "notes": notes
   });
@@ -57,9 +63,12 @@ updates.limitToLast(1).on('child_added', function(childSnapshot) {
 //  $("#customerid").html(recommendation.customerid)
   $("#name").html(update.name)
   $("#email").html(update.email)
-  $("#link").html(update.link)
+  $("#customid").html(update.customerid)
   $("#phone").html(update.phone)
-  $("#address").html(update.address)
+  $("#street").html(update.street)
+  $("#city").html(update.city)
+  $("#state").html(update.state)
+  $("#zip").html(update.zip)
   // Make the link actually work and direct to the URL provided
   $("#link").attr("href", update.link)
   $("#notes").html(update.notes)
