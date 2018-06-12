@@ -85,19 +85,23 @@ h2 {
 .avatar {
   max-width: 150px;
 }
-table {
-  padding: 25px;
+.table {
+  font-size: 10px;
+  padding: 2px;
   border:solid 1px;
   border-color: #ffc107;
   background-color: #111;
   color: white;
   margin-top: 25px;
+  max-width: 550px!important;
+  max-length: 550px!important;
 }
 
 thead {
 
     padding-top: 35px;
     padding bottom: 25px;
+    width: 550px;
   }
 
 
@@ -109,18 +113,21 @@ thead {
 tbody {
 
   padding-top: 15px;
-  padding bottom: 10px;
-  margin-top: 25px
+  padding bottom: 12px;
+  margin-top: 25px;
+  background-color: #111!important;
+  border-color: #ffc107!important;
 }
 tr {
-  padding-top: 10px;
-  padding-left: 15px;
-  font-size: 16px;
-  margin:0 0 0.3rem;
+
+  font-size: 14px;
+  text-align: center;
+
   font-weight: normal;
   border:solid 1px;
-  border-color: #ffc107;
+  border-color: #ffc107!important;
   background-color: #111;
+
 
 }
 
@@ -132,9 +139,8 @@ td {
   border-color: #ffc107;
   background-color:#111;
   padding:  10px;
-  padding-left: 10px;
   margin-top:10px;
-  min-width: 150px;
+  min-width: 110px;
   padding-top: 15px;
 }
 
@@ -6236,7 +6242,7 @@ a.text-dark:hover, a.text-dark:focus {
       background-color: #fff !important; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important; } }
+    border: 1px solid #ffc104 !important; } }
 
 .card {
   color: #fff; }
