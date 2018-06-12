@@ -59,12 +59,13 @@ body {
 }
 
 h2 {
-  font-family:sans-serif;
-  color: white!important;
+  font-family:sans-serif!important;
+  color: #ffc107!important;
   font-size: 45px!important;
   background-color: #111!important;
   width: 400px!important;
 }
+
 
 
 

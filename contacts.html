@@ -9,8 +9,8 @@ layout: none
     <title>Contacts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/darktheme.css" type="text/css">
-    <link rel="stylesheet" href="/assets/css/contacts.css" type="text/css">
-    <script type="text/javascript" src="assets/js/contacts.js"></script>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/contacts.css" type="text/css">
+    <script type="text/javascript" src="{{site.baseurl}}assets/js/contacts.js"></script>
 </head>
 
 <body class="text-primary">
@@ -24,9 +24,9 @@ layout: none
                     </hr>
 
 
-                    <a href="{{site.baseurl}}/index.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Home</a>
-                    <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Order Information</a>
-                    <a href="{{site.baseurl}}/updateprofile.html" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Update the Database</a>
+                    <a href="{{site.baseurl}}/index.html" class="btn btn-primary" role="button" aria-pressed="true">Home</a>
+                    <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary" role="button" aria-pressed="true">Order Information</a>
+                    <a href="{{site.baseurl}}/updates.html" class="btn btn-primary" role="button" aria-pressed="true">Update Contactulator</a>
 
                 </div>
             </div>
@@ -34,18 +34,27 @@ layout: none
         <!-- end of conatinaer-->
         </br>
         </br>
+
+
+        <div class="container">
+            <div class="searchinstructions">
+              <a>Click on a Company's Name to View a List of Contacts</a>
+            </div>
+        <!-- end of container -->
+
+
         <div class="container">
             <div class="col-sm-12">
 
                 <div id="myBtnContainers">
-                    <button type="button" class="btn btn-primary" onclick="filterSelection('all')">Show All</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('all')">Show All</button></br></br>
                     <button type="button" class="btn btn-primary" onclick="filterSelection('ExitZero')">ExitZero</button>
                     <button type="button" class="btn btn-primary" onclick="filterSelection('Tiller & Sons')">Tiller & Sons</button>
                     <button type="button" class="btn btn-primary" onclick="filterSelection('Jackson & Associates')">Jacson & Associates</button>
                     <button type="button" class="btn btn-primary" onclick="filterSelection('Numerix')">Numerix</button>
                     <button type="button" class="btn btn-primary" onclick="filterSelection('Authorinc')">Auhor,Inc.</button>
-                    <button type="button" class="btn btn-primary" onclick="filterSelection('Kingco')">King Company</button>
-                    <button type="button" class="btn btn-primary" onclick="filterSelection('Sugarland')">Sugaland Company</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Kingco')">Kingco</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Sugarland')">Sugarland Company</button>
                 </div>
             </div>
 
