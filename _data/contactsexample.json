@@ -1,0 +1,347 @@
+[
+  {
+    "customer_id": 12345,
+    "name": "Mandy Wiggins",
+    "company": "Sugarland",
+    "email": "mandywiggins@qualitex.com",
+    "phone": "(906) 576-3231",
+    "address": [
+      {
+        "street": "174 Montana Place",
+        "city": "Skyland",
+        "state": "Rhode Island",
+        "zip": 41937
+      }
+    ]
+  },
+  {
+    "customer_id": 12345,
+    "name": "Chasity Graham",
+    "company": "Sugarland",
+    "email": "chasitygraham@qualitex.com",
+    "phone": "(899) 527-2169",
+    "address": [
+      {
+        "street": "980 Charles Place",
+        "city": "Bowden",
+        "state": "District Of Columbia",
+        "zip": 21341
+      }
+    ]
+  },
+  {
+    "customer_id": 12345,
+    "name": "Nannie Finch",
+    "company": "Sugarland",
+    "email": "nanniefinch@qualitex.com",
+    "phone": "(891) 410-3149",
+    "address": [
+      {
+        "street": "257 Indiana Place",
+        "city": "Macdona",
+        "state": "Mississippi",
+        "zip": 10672
+      }
+    ]
+  },
+  {
+    "customer_id": 12345,
+    "name": "Randolph Lester",
+    "company": "Sugarland",
+    "email": "randolphlester@qualitex.com",
+    "phone": "(923) 598-3695",
+    "address": [
+      {
+        "street": "496 Ferry Place",
+        "city": "Charco",
+        "state": "South Carolina",
+        "zip": 81306
+      }
+    ]
+  },
+  {
+    "customer_id": 56789,
+    "name": "Nash Maxwell",
+    "company": "Kingco",
+    "email": "nashmaxwell@qualitex.com",
+    "phone": "(973) 591-2097",
+    "address": [
+      {
+        "street": "686 Sharon Street",
+        "city": "Munjor",
+        "state": "Idaho",
+        "zip": 85455
+      }
+    ]
+  },
+  {
+    "customer_id": 56789,
+    "name": "Lawrence Craft",
+    "company": "Kingco",
+    "email": "lawrencecraft@qualitex.com",
+    "phone": "(872) 440-3698",
+    "address": [
+      {
+        "street": "315 Fillmore Place",
+        "city": "Biehle",
+        "state": "Alabama",
+        "zip": 81866
+      }
+    ]
+  },
+  {
+    "customer_id": 56789,
+    "name": "Cantrell Lara",
+    "company": "Kingco",
+    "email": "cantrelllara@qualitex.com",
+    "phone": "(961) 517-2251",
+    "address": [
+      {
+        "street": "541 Chase Court",
+        "city": "Terlingua",
+        "state": "Pennsylvania",
+        "zip": 68764
+      }
+    ]
+  },
+  {
+   "customer_id": 23456,
+   "name": "Essie Nash",
+   "company": "Authorinc",
+   "email": "essienash@qualitex.com",
+   "phone": "(985) 577-2620",
+   "address": [
+     {
+       "street": "933 Bulwer Place",
+       "city": "Trinway",
+       "state": "Northern Mariana Islands",
+       "zip": 79106
+     }
+   ]
+ },
+ {
+   "customer_id": 23456,
+   "name": "Kasey Patel",
+   "company": "Authorinc",
+   "email": "kaseypatel@qualitex.com",
+   "phone": "(833) 509-2817",
+   "address": [
+     {
+       "street": "358 Dahill Road",
+       "city": "Dragoon",
+       "state": "Tennessee",
+       "zip": 78762
+     }
+   ]
+ },
+ {
+  "customer_id": 34567,
+  "name": "Jenifer Richardson",
+  "company": "Numerix",
+  "email": "jeniferrichardson@qualitex.com",
+  "phone": "(953) 470-2824",
+  "address": [
+    {
+      "street": "665 Union Street",
+      "city": "Eggertsville",
+      "state": "South Dakota",
+      "zip": 42637
+    }
+  ]
+},
+{
+  "customer_id": 34567,
+  "name": "Best Boyle",
+  "company": "Numerix",
+  "email": "bestboyle@qualitex.com",
+  "phone": "(917) 469-3372",
+  "address": [
+    {
+      "street": "135 Townsend Street",
+      "city": "Kylertown",
+      "state": "New Jersey",
+      "zip": 62695
+    }
+  ]
+},
+{
+  "customer_id": 34567,
+  "name": "Hansen Rocha",
+  "company": "Numerix",
+  "email": "hansenrocha@qualitex.com",
+  "phone": "(826) 515-2790",
+  "address": [
+    {
+      "street": "315 Fleet Place",
+      "city": "Manitou",
+      "state": "Tennessee",
+      "zip": 72552
+    }
+  ]
+},
+{
+  "customer_id": 89012,
+  "name": "Dona Case",
+  "company": "Jackson & Associates",
+  "email": "donacase@qualitex.com",
+  "phone": "(958) 430-3251",
+  "address": [
+    {
+      "street": "448 Lloyd Street",
+      "city": "Guilford",
+      "state": "Puerto Rico",
+      "zip": 14926
+    }
+  ]
+},
+{
+  "customer_id": 89012,
+  "name": "Michael Nichols",
+  "company": "Jackson & Associates",
+  "email": "michaelnichols@qualitex.com",
+  "phone": "(836) 530-2483",
+  "address": [
+    {
+      "street": "837 Clarendon Road",
+      "city": "Wintersburg",
+      "state": "Oregon",
+      "zip": 59960
+    }
+  ]
+},
+{
+  "customer_id": 89012,
+  "name": "Hamilton Odom",
+  "company": "Jackson & Associates",
+  "email": "hamiltonodom@qualitex.com",
+  "phone": "(913) 555-2360",
+  "address": [
+    {
+      "street": "984 Wilson Street",
+      "city": "Chautauqua",
+      "state": "Maryland",
+      "zip": 22301
+    }
+  ]
+},
+{
+  "customer_id": 89012,
+  "name": "Sanford Sampson",
+  "company": "Jackson & Associates",
+  "email": "sanfordsampson@qualitex.com",
+  "phone": "(940) 542-3669",
+  "address": [
+    {
+      "street": "564 Linwood Street",
+      "city": "Grantville",
+      "state": "Louisiana",
+      "zip": 53678
+    }
+  ]
+},
+{
+  "customer_id": 90123,
+  "name": "Stephens Glover",
+  "company": "Tiller & Sons",
+  "email": "stephensglover@qualitex.com",
+  "phone": "(843) 558-3427",
+  "address": [
+    {
+      "street": "304 Gerry Street",
+      "city": "Diaperville",
+      "state": "Idaho",
+      "zip": 25722
+    }
+  ]
+},
+{
+  "customer_id": 90123,
+  "name": "Leta Berger",
+  "company": "Tiller & Sons",
+  "email": "letaberger@qualitex.com",
+  "phone": "(998) 422-3793",
+  "address": [
+    {
+      "street": "909 Florence Avenue",
+      "city": "Vallonia",
+      "state": "Alaska",
+      "zip": 69534
+    }
+  ]
+},
+{
+  "customer_id": 90123,
+  "name": "Gonzalez Dennis",
+  "company": "Tiller & Sons",
+  "email": "gonzalezdennis@qualitex.com",
+  "phone": "(917) 445-2264",
+  "address": [
+    {
+      "street": "771 Ford Street",
+      "city": "Dale",
+      "state": "Kansas",
+      "zip": 29511
+    }
+  ]
+},
+{
+   "customer_id": 78901,
+   "name": "Lorena Ingram",
+   "company": "ExitZero",
+   "email": "lorenaingram@qualitex.com",
+   "phone": "(951) 422-3077",
+   "address": [
+     {
+       "street": "398 Miller Place",
+       "city": "Dennard",
+       "state": "New York",
+       "zip": 92132
+     }
+   ]
+ },
+ {
+   "customer_id": 78901,
+   "name": "Bonnie Rhodes",
+   "company": "ExitZero",
+   "email": "bonnierhodes@qualitex.com",
+   "phone": "(849) 554-2711",
+   "address": [
+     {
+       "street": "732 Stockholm Street",
+       "city": "Brooktrails",
+       "state": "North Carolina",
+       "zip": 40714
+     }
+   ]
+ },
+ {
+   "customer_id": 78901,
+   "name": "Cantrell Shepard",
+   "company": "ExitZero",
+   "email": "cantrellshepard@qualitex.com",
+   "phone": "(854) 565-2989",
+   "address": [
+     {
+       "street": "890 Stewart Street",
+       "city": "Avalon",
+       "state": "Florida",
+       "zip": 78730
+     }
+   ]
+ },
+ {
+   "customer_id": 78901,
+   "name": "Washington Goff",
+   "company": "ExitZero",
+   "email": "washingtongoff@qualitex.com",
+   "phone": "(865) 451-3568",
+   "address": [
+     {
+       "street": "700 Guernsey Street",
+       "city": "Jennings",
+       "state": "Massachusetts",
+       "zip": 53799
+     }
+   ]
+ }
+]

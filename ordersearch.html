@@ -22,7 +22,7 @@ layout: none
     <div class="py-4">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <h2>Contactulator 2000</h2>
                     <hr>
 
@@ -33,8 +33,8 @@ layout: none
 
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div id="mybuttons">
+                <div class="col-sm-12">
+                    <div id="mybuttons"></br>
                         <a href="{{site.baseurl}}/index.html" class="btn btn-primary">Home</a>
                         <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary">Order Information</a>
                         <a href="{{site.baseurl}}/updates.html" class="btn btn-primary">Update Contactulator</a>
@@ -43,19 +43,28 @@ layout: none
                     </div>
                     <div id="users">
                         <input placeholder="Enter Order Details here... " />
-                        <span class="sort" data-sort="company">Click to Sort by Company</span>
-                        <span class="sort" data-sort="_id">Click to Sort by OrderID</span>
+                        <span class="sort btn btn-primary" data-sort="company">Sort by Company</span>
+                        <span class="sort btn btn-primary" data-sort="_id">Sort by OrderID</span>
+                        <span class="sort btn btn-primary" data-sort="registered">Sort by Date</span>
 
                         <table>
-                            <tbody class="list">
+                          <tr>
+                            <th>OrderID</th>
+                            <th>Balance</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                          </tr>
+                          <tbody class="list">
                                 {% for order in site.data.recentorders %}
                                 <tr>
                                     <td class="_id">{{order._id}}</td>
                                     <td class="balance">{{order.balance}}</td>
-                                    <td class="email">{{order.registered}}</td>
+                                    <td class="registered">{{order.registered}}</td>
                                     <td class="company">{{order.company}}</td>
                                     <td class="name">{{order.name}}</td>
-                                    <td class="email">{{order.email}}</td>
                                     <td class="phone">{{order.phone}}</td>
                                     <td class="address">{{order.address}}</td>
                                 </tr>

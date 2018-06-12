@@ -64,10 +64,12 @@ layout: none
 
                     <div class="filterDiv {{contact.company}}">
                         <ul>
-                            <h3>{{contact.company}}</h3>
+                            <h3>{{contact.company}}&nbsp &nbspID:&nbsp &nbsp{{contact.customer_id}}</h3></br>
                             <li>Contact: {{contact.name}}</li>
                             <li>Phone: {{contact.phone}}</li>
                             <li>Email: {{contact.email}}</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp{{contact.street}}</br>  &nbsp &nbsp &nbsp
+                             {{contact.city}}, &nbsp {{contact.state}} &nbsp {{contact.zip}}</li>
                         </ul>
                     </div>
                     {%- endfor -%}
