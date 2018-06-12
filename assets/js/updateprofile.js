@@ -19,7 +19,7 @@ var config = {
 firebase.initializeApp(config);
 
 // Reference to the recommendations object in your Firebase database
-var recommendations = firebase.database().ref("recommendations");
+var updates = firebase.database().ref("updates");
 
 // Save a new recommendation to the database, using the input in the form
 var submitRecommendation = function () {
@@ -33,14 +33,14 @@ var submitRecommendation = function () {
   var customerid = $("#updatesCustomerid").val();
   var notes = $("#updatesNotes").val();
   // Push a new recommendation to the database using those values
-  recommendations.push({
+  updates.push({
     "name": name,
     "email": email,
     "link": link,
     "phone": phone,
     "address": address,
-    //"customerid": customerid,
-  //  "notes": notes
+    "customerid": customerid,
+    "notes": notes
   });
 };
 
@@ -48,21 +48,21 @@ var submitRecommendation = function () {
 // update the table with its values. This is called every time the child_added
 // event is triggered on the recommendations Firebase reference, which means
 // that this will update EVEN IF you don't refresh the page. Magic.
-recommendations.limitToLast(1).on('child_added', function(childSnapshot) {
+updates.limitToLast(1).on('child_added', function(childSnapshot) {
   // Get the recommendation data from the most recent snapshot of data
   // added to the recommendations list in Firebase
-  recommendation = childSnapshot.val();
+  update = childSnapshot.val();
 
   // Update the HTML to display the recommendation text
 //  $("#customerid").html(recommendation.customerid)
-  $("#name").html(recommendation.name)
-  $("#email").html(recommendation.email)
-  $("#link").html(recommendation.link)
-  $("#phone").html(recommendation.phone)
-  $("#address").html(recommendation.address)
+  $("#name").html(update.name)
+  $("#email").html(update.email)
+  $("#link").html(update.link)
+  $("#phone").html(update.phone)
+  $("#address").html(update.address)
   // Make the link actually work and direct to the URL provided
-  $("#link").attr("href", recommendation.link)
-  $("#notes").html(recommendation.notes)
+  $("#link").attr("href", update.link)
+  $("#notes").html(update.notes)
 });
 
 // When the window is fully loaded, call this function.
@@ -72,8 +72,8 @@ recommendations.limitToLast(1).on('child_added', function(childSnapshot) {
 // will run when the submit button is clicked.
 $(window).load(function () {
 
-  // Find the HTML element with the id recommendationForm, and when the submit
+  // Find the HTML element with the id updatesForm, and when the submit
   // event is triggered on that element, call submitRecommendation.
-  $("#recommendationForm").submit(submitRecommendation);
+  $("#updatesForm").submit(submitRecommendation);
 
 });
