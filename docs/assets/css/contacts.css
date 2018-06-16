@@ -1,0 +1,138 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  background-color: #111;
+  text: white;
+  font-family:sans-serif!important;
+  background-image: url(/assets/gbhexy.jpg)!important;
+
+}
+
+h2 {
+  font-family:sans-serif;
+  color: white!important;
+  font-size: 45px!important;
+  background-color: #111!important;
+  width: 400px!important;
+}
+
+.searchinstructions {
+  font-size: 25px!important;
+  color: white!important;
+  text-align: center;
+  background-color: #111;
+}
+
+
+
+.show {
+  display: <html>
+
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #111;
+  color: white;
+  width: 450px;
+  height: 275px;
+  line-height: 25px;
+  text-align: left;
+  margin: 2px;
+  padding-left: 10px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #ffc207!important;
+  display: none;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #111;
+  border-color: #ffc107;
+margin-top: 5px;
+margin-left: 5px;
+margin-bottom: 5px;
+}
+
+.btn-primary:hover {
+  color: #212529;
+  background-color: #ecc310;
+  border-color: #e0b90f; }
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(241, 205, 49, 0.5); }
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #212529;
+  background-color: #f1cd31;
+  border-color: #f1cd31; }
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+
+.show > .btn-primary.dropdown-toggle {
+  color: #212529;
+  background-color: #e0b90f;
+  border-color: #d4af0e; }
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(241, 205, 49, 0.5); }
+
+
+
+
+input {
+  border:solid 1px #ffc107;
+  border-radius: 1px;
+  margin-left: 20px;
+  background-color:#111;
+ min-width: 200px!important;
+ min-height: 35px!important;
+ color: white!important;
+
+}
+
+
+input:focus {
+border:solid 2px;
+  border-color:white!important;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+
+h2 {
+  font-family:sans-serif!important;
+  color: #ffc107!important;
+  font-size: 45px!important;
+  background-color: #111!important;
+  width: 400px!important;
+}

@@ -1,0 +1,93 @@
+list {
+  font-family:sans-serif;
+  text: 20px;
+}
+
+th {
+  padding: 10px;
+  border:solid 2px #eee;
+  text-size: 15px;
+  border-color: green;
+  background-color:grey;
+
+}
+
+
+
+
+
+
+td {
+  padding: 20px;
+  border:solid 2px #eee;
+  text-size: 15px;
+  border-color: purple;
+  light-bg;
+}
+
+input {
+  border:solid 5px purple;
+  border-radius: 5px;
+  padding: 15px; 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 250px;
+}
+
+input:focus {
+  outline:none;
+  border-color:green;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border-color: purple;
+  display:inline-block;
+  color:black;
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:40px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  display:inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+  }
+
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
+
+}

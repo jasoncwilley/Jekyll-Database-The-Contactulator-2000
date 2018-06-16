@@ -1,0 +1,94 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/darktheme.css" type="text/css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/contacts.css" type="text/css">
+    <script type="text/javascript" src="{{site.baseurl}}assets/js/contacts.js"></script>
+</head>
+
+<body class="text-primary">
+    <div class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+
+                    <h2>Contactulator 2000</h2>
+                    </hr>
+
+
+                    <a href="{{site.baseurl}}/index.html" class="btn btn-primary">Home</a>
+                    <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary">Order Information</a>
+                    <a href="{{site.baseurl}}/updates.html" class="btn btn-primary">Update Contactulator</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of conatinaer-->
+        </br>
+        </br>
+
+
+        <div class="container">
+            <div class="searchinstructions">
+              <a>Click on a Company's Name to View a List of Contacts</a>
+            </div>
+        <!-- end of container -->
+
+
+        <div class="container">
+            <div class="col-sm-12">
+
+                <div id="myBtnContainers">
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('all')">Show All</button></br></br>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('ExitZero')">ExitZero</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Tiller & Sons')">Tiller & Sons</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Jackson & Associates')">Jacson & Associates</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Numerix')">Numerix</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Authorinc')">Auhor,Inc.</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Kingco')">Kingco</button>
+                    <button type="button" class="btn btn-primary" onclick="filterSelection('Sugarland')">Sugarland Company</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-sm-8">
+                    {% for contact in site.data.contacts %}
+
+                    <div class="filterDiv {{contact.company}}">
+                        <ul>
+                            <h3>{{contact.company}}&nbsp &nbspID:&nbsp &nbsp{{contact.customer_id}}</h3></br>
+                            <li>Contact: {{contact.name}}</li>
+                            <li>Phone: {{contact.phone}}</li>
+                            <li>Email: {{contact.email}}</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp{{contact.street}}</br>  &nbsp &nbsp &nbsp
+                             {{contact.city}}, &nbsp {{contact.state}} &nbsp {{contact.zip}}</li>
+                        </ul>
+                    </div>
+                    {%- endfor -%}
+
+                </div>
+
+            </div>  <!-- container -->
+
+
+
+            <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
