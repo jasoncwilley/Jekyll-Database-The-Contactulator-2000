@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Update Profile</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Load the Firebase library before loading the body. -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/updates.css" type="text/css"></link>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="assets/css/darktheme.css" rel="stylesheet"></link>
+
+
+    <script src="assets/js/updateprofile.js"></script>
+
+</head>
+
+<body>
+    <div class="py-4">
+        <div class="container">
+            <div class=".col-sm-12">
+                    <h2>Contactulator 2000</h2>
+                    </br>
+                    <<hr>
+
+                </div>
+            </div>
+
+        <!-- end of conatinaer-->
+
+        <div class="container">
+              <div class=".col-sm-12">
+                    <div id="mybuttons">
+                        <a href="{{site.baseurl}}/index.html" class="btn-primary">Home</a>
+
+                        <a href="{{site.baseurl}}/contacts.html" class="btn-primary">Company Contacts</a>
+                        <a href="{{site.baseurl}}/ordersearch.html" class="btn-primary">Order Information</a>
+                    </div>
+                </div>
+            </div>
+              <!-- end of conatinaer-->
+
+        <div class="container">
+            <div class="forminstructions"><br><br>
+                <a>Please complete the form below to update Contactulator 2000's Database</a>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Street Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip Code</th>
+                        <th>Website Link</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- This is empty for now, but it will be filled out by an event handler in application.js with the most recent recommendation data from Firebase. -->
+                        <td id="customerid"></td>
+                        <td id="name"></td>
+                        <td id="phone"></td>
+                        <td id="email"></td>
+                        <td id="street"></td>
+                        <td id="city"></td>
+                        <td id="state"></td>
+                        <td id="zip"></td>
+                        <td>
+                            <a id="link" target="_blank"></a>
+                        </td>
+                        <td id="notes"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form id="updatesForm">
+                <div class="form-group">
+                    <label for="updatesCustomerid"></label>
+                    <input class="form-control" id="updatesCustomerid" placeholder="Customer ID">
+                </div>
+                <form id="updatesForm">
+                    <div class="form-group">
+                        <label for="updatesName"></label>
+                        <input class="form-control" id="updatesName" placeholder="Name">
+                    </div>
+                    <form id="updatesForm">
+                        <div class="form-group">
+                            <label for="updatesPhone"></label>
+                            <input class="form-control" id="updatesPhone" placeholder="Phone Number">
+                        </div>
+                        <form id="updatesForm">
+                            <div class="form-group">
+                                <label for="updatesEmail"></label>
+                                <input class="form-control" id="updatesEmail" placeholder="Email Address">
+                            </div>
+                            <form id="updatesForm">
+                                <div class="form-group">
+                                    <label for="updatesStreet"></label>
+                                    <input class="form-control" id="updatesStreet" placeholder="Street address">
+                                </div>
+                                <form id="updatesForm">
+                                    <div class="form-group">
+                                        <label for="updatesCity"></label>
+                                        <input class="form-control" id="updatesCity" placeholder="City">
+                                    </div>
+                                    <form id="updatesForm">
+                                        <div class="form-group">
+                                            <label for="updatesState"></label>
+                                            <input class="form-control" id="updatesState" placeholder="State">
+                                        </div>
+                                        <form id="updatesForm">
+                                            <div class="form-group">
+                                                <label for="updatesZip"></label>
+                                                <input class="form-control" id="updatesZip" placeholder="Zip Code">
+                                            </div>
+
+                                            <form id="updatesForm">
+                                                <div class="form-group">
+                                                    <label for="updatesLink"></label>
+                                                    <input type="url" class="form-control" id="updatesLink" placeholder="Website Address">
+                                                </div>
+                                                <form id="updatesForm">
+                                                    <div class="form-group">
+                                                        <label for="updatesNotes"></label>
+                                                        <input class="form-control" id="updatesNotes" placeholder="Notes">
+                                                    </div>
+                                                    </br>
+                                                    <!-- When you click this button, trigger the submit event on this form. -->
+                                                    <button type="submit" class="btn-primary">Submit</button>
+                                                </form>
+        </div>
+        <!-- end of conatinaer-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>

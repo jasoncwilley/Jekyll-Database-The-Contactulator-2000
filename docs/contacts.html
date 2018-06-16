@@ -1,6 +1,3 @@
----
-layout: none
----
 <!DOCTYPE html>
 <meta charset="utf-8">
 
@@ -8,9 +5,9 @@ layout: none
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/darktheme.css" type="text/css">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/contacts.css" type="text/css">
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/contacts.js"></script>
+    <link rel="stylesheet" href="/assets/css/darktheme.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/contacts.css" type="text/css">
+    <script type="text/javascript" src="assets/js/contacts.js"></script>
 </head>
 
 <body class="text-primary">
@@ -24,9 +21,9 @@ layout: none
                     </hr>
 
 
-                    <a href="{{site.baseurl}}/index.html" class="btn btn-primary">Home</a>
-                    <a href="{{site.baseurl}}/ordersearch.html" class="btn btn-primary">Order Information</a>
-                    <a href="{{site.baseurl}}/updates.html" class="btn btn-primary">Update Contactulator</a>
+                    <a href="/index.html" class="btn btn-primary">Home</a>
+                    <a href="/ordersearch.html" class="btn btn-primary">Order Information</a>
+                    <a href="/updates.html" class="btn btn-primary">Update Contactulator</a>
 
                 </div>
             </div>
@@ -60,21 +57,260 @@ layout: none
 
             <div class="container">
                 <div class="col-sm-8">
-                    {% for contact in site.data.contacts %}
+                    
 
-                    <div class="filterDiv {{contact.company}}">
+                    <div class="filterDiv Sugarland">
                         <ul>
-                            <h3>{{contact.company}}&nbsp &nbspID:&nbsp &nbsp{{contact.customer_id}}</h3></br>
-                            <li>Contact: {{contact.name}}</li>
-                            <li>Phone: {{contact.phone}}</li>
-                            <li>Email: {{contact.email}}</li>
-                            <li>Address: </br>&nbsp &nbsp &nbsp{{contact.street}}</br>  &nbsp &nbsp &nbsp
-                             {{contact.city}}, &nbsp {{contact.state}} &nbsp {{contact.zip}}</li>
+                            <h3>Sugarland&nbsp &nbspID:&nbsp &nbsp12345</h3></br>
+                            <li>Contact: Mandy Wiggins</li>
+                            <li>Phone: (906) 576-3231</li>
+                            <li>Email: mandywiggins@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp174 Montana Place</br>  &nbsp &nbsp &nbsp
+                             Skyland, &nbsp Rhode Island &nbsp 41937</li>
                         </ul>
                     </div>
-                    {%- endfor -%}
 
-                </div>
+                    <div class="filterDiv Sugarland">
+                        <ul>
+                            <h3>Sugarland&nbsp &nbspID:&nbsp &nbsp12345</h3></br>
+                            <li>Contact: Chasity Graham</li>
+                            <li>Phone: (899) 527-2169</li>
+                            <li>Email: chasitygraham@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp980 Charles Place</br>  &nbsp &nbsp &nbsp
+                             Bowden, &nbsp Kentucky &nbsp 21341</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Sugarland">
+                        <ul>
+                            <h3>Sugarland&nbsp &nbspID:&nbsp &nbsp12345</h3></br>
+                            <li>Contact: Nannie Finch</li>
+                            <li>Phone: (891) 410-3149</li>
+                            <li>Email: nanniefinch@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp257 Indiana Place</br>  &nbsp &nbsp &nbsp
+                             Macdona, &nbsp Mississippi &nbsp 10672</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Sugarland">
+                        <ul>
+                            <h3>Sugarland&nbsp &nbspID:&nbsp &nbsp12345</h3></br>
+                            <li>Contact: Randolph Lester</li>
+                            <li>Phone: (923) 598-3695</li>
+                            <li>Email: randolphlester@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp496 Ferry Place</br>  &nbsp &nbsp &nbsp
+                             Charco, &nbsp South Carolina &nbsp 81306</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Kingco">
+                        <ul>
+                            <h3>Kingco&nbsp &nbspID:&nbsp &nbsp56789</h3></br>
+                            <li>Contact: Nash Maxwell</li>
+                            <li>Phone: (973) 591-2097</li>
+                            <li>Email: nashmaxwell@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp686 Sharon Street</br>  &nbsp &nbsp &nbsp
+                             Munjor, &nbsp Idaho &nbsp 85455</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Kingco">
+                        <ul>
+                            <h3>Kingco&nbsp &nbspID:&nbsp &nbsp56789</h3></br>
+                            <li>Contact: Lawrence Craft</li>
+                            <li>Phone: (872) 440-3698</li>
+                            <li>Email: lawrencecraft@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp315 Fillmore Place</br>  &nbsp &nbsp &nbsp
+                             Biehle, &nbsp Alabama &nbsp 81866</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Kingco">
+                        <ul>
+                            <h3>Kingco&nbsp &nbspID:&nbsp &nbsp56789</h3></br>
+                            <li>Contact: Cantrell Lara</li>
+                            <li>Phone: (961) 517-2251</li>
+                            <li>Email: cantrelllara@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp541 Chase Court</br>  &nbsp &nbsp &nbsp
+                             Terlingua, &nbsp Pennsylvania &nbsp 68764</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Authorinc">
+                        <ul>
+                            <h3>Authorinc&nbsp &nbspID:&nbsp &nbsp23456</h3></br>
+                            <li>Contact: Essie Nash</li>
+                            <li>Phone: (985) 577-2620</li>
+                            <li>Email: essienash@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp933 Bulwer Place</br>  &nbsp &nbsp &nbsp
+                             Trinway, &nbsp Northern Mariana Islands &nbsp 79106</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Authorinc">
+                        <ul>
+                            <h3>Authorinc&nbsp &nbspID:&nbsp &nbsp23456</h3></br>
+                            <li>Contact: Kasey Patel</li>
+                            <li>Phone: (833) 509-2817</li>
+                            <li>Email: kaseypatel@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp358 Dahill Road</br>  &nbsp &nbsp &nbsp
+                             Dragoon, &nbsp Tennessee &nbsp 78762</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Numerix">
+                        <ul>
+                            <h3>Numerix&nbsp &nbspID:&nbsp &nbsp34567</h3></br>
+                            <li>Contact: Jenifer Richardson</li>
+                            <li>Phone: (953) 470-2824</li>
+                            <li>Email: jeniferrichardson@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp665 Union Street</br>  &nbsp &nbsp &nbsp
+                             Eggertsville, &nbsp South Dakota &nbsp 42637</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Numerix">
+                        <ul>
+                            <h3>Numerix&nbsp &nbspID:&nbsp &nbsp34567</h3></br>
+                            <li>Contact: Best Boyle</li>
+                            <li>Phone: (917) 469-3372</li>
+                            <li>Email: bestboyle@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp135 Townsend Street</br>  &nbsp &nbsp &nbsp
+                             Kylertown, &nbsp New Jersey &nbsp 62695</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Numerix">
+                        <ul>
+                            <h3>Numerix&nbsp &nbspID:&nbsp &nbsp34567</h3></br>
+                            <li>Contact: Hansen Rocha</li>
+                            <li>Phone: (826) 515-2790</li>
+                            <li>Email: hansenrocha@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp315 Fleet Place</br>  &nbsp &nbsp &nbsp
+                             Manitou, &nbsp Tennessee &nbsp 72552</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Jackson & Associates">
+                        <ul>
+                            <h3>Jackson & Associates&nbsp &nbspID:&nbsp &nbsp89012</h3></br>
+                            <li>Contact: Dona Case</li>
+                            <li>Phone: (958) 430-3251</li>
+                            <li>Email: donacase@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp448 Lloyd Street</br>  &nbsp &nbsp &nbsp
+                             Guilford, &nbsp Puerto Rico &nbsp 14926</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Jackson & Associates">
+                        <ul>
+                            <h3>Jackson & Associates&nbsp &nbspID:&nbsp &nbsp89012</h3></br>
+                            <li>Contact: Michael Nichols</li>
+                            <li>Phone: (836) 530-2483</li>
+                            <li>Email: michaelnichols@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp837 Clarendon Road</br>  &nbsp &nbsp &nbsp
+                             Wintersburg, &nbsp Oregon &nbsp 59960</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Jackson & Associates">
+                        <ul>
+                            <h3>Jackson & Associates&nbsp &nbspID:&nbsp &nbsp89012</h3></br>
+                            <li>Contact: Hamilton Odom</li>
+                            <li>Phone: (913) 555-2360</li>
+                            <li>Email: hamiltonodom@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp984 Wilson Street</br>  &nbsp &nbsp &nbsp
+                             Chautauqua, &nbsp Maryland &nbsp 22301</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Jackson & Associates">
+                        <ul>
+                            <h3>Jackson & Associates&nbsp &nbspID:&nbsp &nbsp89012</h3></br>
+                            <li>Contact: Sanford Sampson</li>
+                            <li>Phone: (940) 542-3669</li>
+                            <li>Email: sanfordsampson@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp564 Linwood Street</br>  &nbsp &nbsp &nbsp
+                             Grantville, &nbsp Louisiana &nbsp 53678</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Tiller & Sons">
+                        <ul>
+                            <h3>Tiller & Sons&nbsp &nbspID:&nbsp &nbsp90123</h3></br>
+                            <li>Contact: Stephens Glover</li>
+                            <li>Phone: (843) 558-3427</li>
+                            <li>Email: stephensglover@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp304 Gerry Street</br>  &nbsp &nbsp &nbsp
+                             Diaperville, &nbsp Idaho &nbsp 25722</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Tiller & Sons">
+                        <ul>
+                            <h3>Tiller & Sons&nbsp &nbspID:&nbsp &nbsp90123</h3></br>
+                            <li>Contact: Leta Berger</li>
+                            <li>Phone: (998) 422-3793</li>
+                            <li>Email: letaberger@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp909 Florence Avenue</br>  &nbsp &nbsp &nbsp
+                             Vallonia, &nbsp Alaska &nbsp 69534</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv Tiller & Sons">
+                        <ul>
+                            <h3>Tiller & Sons&nbsp &nbspID:&nbsp &nbsp90123</h3></br>
+                            <li>Contact: Gonzalez Dennis</li>
+                            <li>Phone: (917) 445-2264</li>
+                            <li>Email: gonzalezdennis@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp771 Ford Street</br>  &nbsp &nbsp &nbsp
+                             Dale, &nbsp Kansas &nbsp 29511</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv ExitZero">
+                        <ul>
+                            <h3>ExitZero&nbsp &nbspID:&nbsp &nbsp78901</h3></br>
+                            <li>Contact: Lorena Ingram</li>
+                            <li>Phone: (951) 422-3077</li>
+                            <li>Email: lorenaingram@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp398 Miller Place</br>  &nbsp &nbsp &nbsp
+                             Dennard, &nbsp New York &nbsp 92132</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv ExitZero">
+                        <ul>
+                            <h3>ExitZero&nbsp &nbspID:&nbsp &nbsp78901</h3></br>
+                            <li>Contact: Bonnie Rhodes</li>
+                            <li>Phone: (849) 554-2711</li>
+                            <li>Email: bonnierhodes@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp732 Stockholm Street</br>  &nbsp &nbsp &nbsp
+                             Brooktrails, &nbsp North Carolina &nbsp 40714</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv ExitZero">
+                        <ul>
+                            <h3>ExitZero&nbsp &nbspID:&nbsp &nbsp78901</h3></br>
+                            <li>Contact: Cantrell Shepard</li>
+                            <li>Phone: (854) 565-2989</li>
+                            <li>Email: cantrellshepard@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp890 Stewart Street</br>  &nbsp &nbsp &nbsp
+                             Avalon, &nbsp Florida &nbsp 78730</li>
+                        </ul>
+                    </div>
+
+                    <div class="filterDiv ExitZero">
+                        <ul>
+                            <h3>ExitZero&nbsp &nbspID:&nbsp &nbsp78901</h3></br>
+                            <li>Contact: Washington Goff</li>
+                            <li>Phone: (865) 451-3568</li>
+                            <li>Email: washingtongoff@qualitex.com</li>
+                            <li>Address: </br>&nbsp &nbsp &nbsp700 Guernsey Street</br>  &nbsp &nbsp &nbsp
+                             Jennings, &nbsp Massachusetts &nbsp 53799</li>
+                        </ul>
+                    </div></div>
 
             </div>  <!-- container -->
 
