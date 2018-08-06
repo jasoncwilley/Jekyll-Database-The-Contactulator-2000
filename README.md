@@ -1,5 +1,5 @@
 
-#Jekyll-Database-The-Contactulator-2000
+# Jekyll-Database-The-Contactulator-2000
 
 The Contactulator 2000 is a Jekyll driven database with an optional Firebase backend.  While the database can function fine using only Jekyll I decided to incorporate a Firebase backend to speed up the updating process.  This version of the project consists of three parts:
 
@@ -13,44 +13,40 @@ The Contact list and Recent Order sections ultlize List.js to perform the sort a
 
 See The Contactulator 2000 in action at http://www.decryptmylife.xyz 
 
-#Motivation
+### Motivation
 
 I started this project for several reasons but mostly because there was not (or I could not find) a decent web tutorial that guided users throught the process of creating Jekyll driven database with Firebase backend.  There is probably several out there that I overlooked but I figured what better way to learn these concepts than create my own.  
 
-#Getting Started
+### Getting Started
 
 In order to get started you need to first verify that you have all the verify all the required software. I have not tested this project with multiple versions of required softward so I recommend using the versions I developed in.  
 
-Required:
+### Requirements:
 
-Jekyll 3.8.3
-Bundler 1.16.2
-List.js 1.5.0 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+- Jekyll 3.8.3
+- Bundler 1.16.2
+- List.js 1.5.0 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
-Optional:
-Firebase Realtime Database API_Key  https://www.firebase.com 
+- Optional:
+     - Firebase Realtime Database API_Key  https://www.firebase.com 
 
 Run the following command to ensure you have the required software/versions needed.
-
+```sh
 laptop@laptop:~$ jekyll -v
 jekyll 3.8.3
-
+```
 If you need to install jekyll see my tutorial on how to install jekyll (insert link)
-
+```sh
 laptop@laptop:~$ bundler -v
 Bundler version 1.16.2
-
+```
 If you need to install bundler see my tutorial on installing jekyll it contains bundler installation instructions.
 
 Ensure you have a copy of List.js which can be downloaded here or you can use the CDN above.  
 
 http://listjs.com/overview/download/
 
-
-
-
 What things you need to install the software and how to install them
-
 
 Give examples
 
