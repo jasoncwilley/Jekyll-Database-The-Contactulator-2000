@@ -1,7 +1,7 @@
 
 # Jekyll-Database-The-Contactulator-2000
 
-[!](http://i63.tinypic.com/netec.png)
+[![N|Solid](http://i63.tinypic.com/netec.png)(http://www.decryptmylife.xyz)
 
 The Contactulator 2000 is a Jekyll driven database with an optional Firebase backend.  While the database can function fine using only Jekyll I decided to incorporate a Firebase backend to speed up the updating process.  This version of the project consists of three parts:
 
